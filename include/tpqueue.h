@@ -1,10 +1,11 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
+#include <cassert>
 
 template<typename T, int size>
 class TPQueue {
-  private:
+ private:
   T* items;
   int max_size;
   int head, tail;
@@ -66,8 +67,8 @@ class TPQueue {
 };
 
 struct SYM {
-  char ch;
-  int prior;
+    char ch;
+    int prior;
 };
 
 #endif  // INCLUDE_TPQUEUE_H_
